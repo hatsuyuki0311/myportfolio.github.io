@@ -8,7 +8,20 @@
     padding:80px 20px 0;/*それぞれの上の隙間*/
 }
 header{
-    background:url(../image/princess21.png) no-repeat right center/cover;
+    /*background:url(../image/kuukan04.png) no-repeat right center/cover;*/
+    
+}
+
+header::after{
+    content:"";
+    /*画面いっぱいに固定配置*/
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:url(../image/kuukan04.png) no-repeat right center/cover;
+    z-index: -1;
 }
 header .innerWrap{
     height:720px;
@@ -16,8 +29,9 @@ header .innerWrap{
 header h1{
     text-align: center;
     font-size: 60px;
+    color:#3A7B9B;
     letter-spacing: .05em;
-    margin-bottom: 80px;
+    padding: 130px 40px 0px;
 }
 header nav{
     /*ナビゲーション位置指定*/
@@ -25,7 +39,8 @@ header nav{
     top:0;
     left:0;
     width:100%;
-    color: #fff;
+    background-color:rgba(255, 255, 255, 0.493);
+    padding: 10px 20px;
 }
 header nav ul{
     display:flex;/*横並び*/
@@ -36,8 +51,21 @@ header nav ul{
     padding: 10px 20px;
     z-index: 100;
 }
+header nav ul li{
+    font-size:20px;
+    font-weight: bold;
+    list-style:none;/*・を消す*/
+}
+header nav ul li a{
+    color:blueviolet;
+    text-decoration: none!important;
+}
+header nav ul li a:hover {
+    color:rgb(218, 117, 99);
+  }
+
 .self-introductionSec{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -53,12 +81,27 @@ header nav ul{
 .self-introductionSec.photo{
     width: 600px;
 }
-.self-introductionSec.text{
+/*.self-introductionSec.text{
     width: 600px;
     text-align: right;
+    color:aquamarine;
+}*/
+.Self_PR{
+    /*background-color:rgba(205, 152, 255, 0.486);*/
+    background-color:rgba(250, 235, 215, 0.39);
+    padding-bottom:50px;
 }
-
-
+.Graduation_thesisSec{
+    background-color:rgb(181, 223, 132);
+    padding-bottom:50px;
+}
+.LanguagesANDtoolsSec{
+    /*background-color:rgba(16, 173, 121, 0.246);*/
+    padding-bottom:50px;
+}
+.dateAreaSec{
+    background-color:rgb(250, 235, 215);
+}
 .dateAreaSec h2{
     font-size: 30px;
     /*margin-bottom: 100px;*/
@@ -111,17 +154,17 @@ header nav ul{
     text-align: left;
 }
 .under {
-    background:url(https://saruwakakun.com/wp-content/uploads/2017/02/wave.png) bottom repeat-x;
-    background-size: 20px;
+    /*background:url(https://saruwakakun.com/wp-content/uploads/2017/02/wave.png) bottom repeat-x;
+    background-size: 20px;*/
   }
 /*.slider div{
     width:300px;
 }*/
-/*.bx-wrapper{
+.bx-wrapper{
     margin: 0 auto;
     width:600px;
     height:400px;
-}*/
+}
 .Insertion img{
     position:absolute; 
     top:100px;
@@ -131,4 +174,62 @@ header nav ul{
     position:absolute;
     top:200px;
     left:200px; 
+}
+/*main{
+    background-color: rgba(245, 227, 201, 0.582);
+}*/
+
+footer{
+    background-color:#3A7B9B;
+    color:aliceblue;
+    padding:14px 10px 3px;
+    text-align: center;
+}
+.text{
+    font-size:25px;
+    color:#3A7B9B;
+}
+.btn--orange,
+a.btn--orange {
+  text-decoration: none;
+  color: #fff;
+  background-color: #eb6100;
+  padding:20px;
+  font-weight:bold;
+}
+a.btn--orange:hover {
+    text-decoration: underline;
+}
+
+.btn--orange,
+a.btn--blue {
+  text-decoration: none;
+  color: #fff;
+  background-color: #023980;
+  padding:20px;
+  font-weight:bold;
+}
+a.btn--blue:hover {
+    text-decoration: underline;
+}
+
+/*.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+  
+}*/
+
+a.btn--radius {
+   border-radius: 100vh;
+   
+}
+a{
+    margin:10px;
+}
+/*.right h2{
+    text-align: left;
+}*/
+.right{
+    vertical-align: middle;
 }
